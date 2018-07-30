@@ -1,0 +1,234 @@
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+/* End CSS RESET */
+
+/* Color Themes 
+#7D97A6
+#F79F00
+#13120F
+#D7D7D6
+#EE6B39
+*/
+html {
+    font-size: 16pt;
+}
+
+body{
+    font-family: 'Mukta Malar', sans-serif;
+    color: #FFF; /* #FFF = white color */
+}
+
+nav {
+    background: #7D97A6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*height: 10vh;*/
+    height: 75px;
+    width: 100vw;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    /*height: 45px; if this was defined as height then the hover color would only apply to the text*/ 
+    /*width: 100%;*/
+    justify-content:space-between;
+    align-items: center;
+    padding-right: 05vw;
+}
+
+nav li {
+      font-weight: bold;
+      color: #fff;
+      font-size: 1.0rem;
+}
+
+.brand {
+      font-weight: bold;
+      color: #fff;
+      font-size: 1.5rem;
+      padding-left: 2.5vw;
+      /*padding-top: 5px;*/
+}
+
+/*a: link{*/
+/*    }  font-weight: bold;*/
+
+nav a:link {
+    display: block;
+    /* color: #D7D7D6; this was making the nav links gray*/
+    text-decoration: none;
+    padding: 10px 15px 10px 15px; 
+    /* the padding defines the height and widthe of the hover state of the nav list items */
+}
+
+nav a:hover {
+    background: #D7D7D6;
+    color: #7D97A6;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.section-height {
+    height: 42vh;
+    /*margin: 8px 8px;*/
+}
+
+/* link reset ???? This seams to be keeping the blue from showing up on the links in sections 1 and 2*/
+a:link, a:visited {
+  background-color: transparent;
+  text-transform: none;
+    color: inherit;
+}
+
+.section-1 {
+    background-color: #13120F;
+    background-image: url("../images/road/R_BlueRidgeParkway-5D-41-25p.jpg");
+    background-repeat: no-repeat;
+    background-position: 55% 60%;
+    background-size: cover; /* better than 100% 100% so the image isn't skewed*/
+    color: #FFF;
+    padding-top: 10vh;
+    /* max-width: 600px;
+    margin: 0 auto; */
+}
+
+.section-2 {
+    display: flex;
+    background-color: #FFF;
+    font-size: 1.25rem
+}
+
+.sec2-left {
+    /*background-color: #EE6B39;*/
+    height: inherit;
+    background-image:url("../images/road/R_BlueRidgeParkway-g10-010-25p.jpg");
+    background-repeat: no-repeat;
+    background-position: 39% 50%;
+    background-size: cover; /* better than 100% 100% so the image isn't skewed*/
+    width: 33.333%;
+    padding: 8px 8px 8px 8px;
+    /*margin: 8px 4px 8px 8px;*/
+    color: #000000; /* color black since text is against white sky background*/
+}
+
+.sec2-middle {
+    /*background-color: #EE6B39; #13120F instead? */
+    height: inherit;
+    background-image:url("../images/maintenance/img_4210.jpg");
+    background-repeat: no-repeat;
+    background-position: 55% 50%;
+    background-size: cover; /* better than 100% 100% so the image isn't skewed*/
+    width: 33.333%;
+    padding: 8px 8px 8px 8px;
+    /*margin: 8px 4px 8px 4px;*/
+    color: #FFF;
+
+}
+
+.sec2-right {
+    /*background-color: #EE6B39;*/
+    height: inherit;
+    background-image:url("../images/friends/f_blueridgeparkway-5d-04.jpg");
+    background-repeat: no-repeat;
+    background-position: 75% 50%;
+    background-size: cover; /* better than 100% 100% so the image isn't skewed*/
+    width: 33.334%;
+    padding: 8px 8px 8px 8px;
+    /*margin: 8px 8px 8px 4px;*/
+    color: #FFF;
+}
+
+.ramblings {
+  /*width:100%;*/
+  /*display: flex;*/
+    background-image: url(../images/road/R_BlueRidgeParkway-5D-41-25p.jpg);
+    background-repeat: no-repeat;
+    background-position: 75% 50%;
+    background-size: cover; /* better than 100% 100% so the image isn't skewed*/
+    padding: 02vw 10vw 02vw 10vw;
+    color: #FFF;
+    font-size: 1.25rem;
+    height: 82vh;
+}
+
+.about {
+  /*width:100%;*/
+  /*display: flex;*/
+    background-image: url(../images/about/img_2967.jpg);
+    background-repeat: no-repeat;
+    background-position: 75% 50%;
+    background-size: cover; /* better than 100% 100% so the image isn't skewed*/
+    padding: 02vw 10vw 02vw 10vw;
+    color: #FFF;
+    font-size: 1.25rem;
+    height: 82vh;
+}
+
+.road-1 {
+    background-color: #13120F;
+}
+
+.road-2 {
+    background-color: #13120F;
+}
+
+.footer {
+    background-color: #7D97A6;
+    height: 55px;
+    /*position: ;*/
+    /* footer is not below the last image —need to figure out how to calculate the vh*/
+/* I want to figure out how to have "About" centered vertically in the footer */
+}
+
+/* Photo grid sourced from "https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_grid_responsive" -------------------------------------------------------------------------------------------------------------*/
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create three equal columns that sits next to each other was 4 at 25% but  wanted 3 to match my home page Applies to Road/Maintenance/Friends */
+.column {
+    -ms-flex: 33.333%; /* IE10 */
+    flex: 33.333%;
+    max-width: 33.333%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* I'd like to add media quiery changes for the nav bar to stack when small*/

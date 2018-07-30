@@ -1,0 +1,171 @@
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+/* End CSS RESET */
+
+/* Color Themes 
+#7D97A6
+#F79F00
+#13120F
+#D7D7D6
+#EE6B39
+*/
+
+h1 {
+    font-size: 25px;
+}
+body{
+    font-family: 'Mukta Malar', sans-serif;
+    color: #FFF;
+    /*background-color: #D7D7D6; not needed? Defined by section class*/
+}
+
+nav {
+    background: #7D97A6;
+    /*font-family: #;—leaving this commented since I call out the font family in body*/
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    /*height: 45px; if this was defined as height then the hover color would only apply to the text*/ 
+    width: 100%;
+    justify-content:space-around;
+    align-items: center;
+}
+
+nav li {
+      font-weight: bold;
+      color: #fff;
+      font-size: 1.25rem;
+}
+
+/*a: link{*/
+/*    }  font-weight: bold;*/
+
+nav a:link {
+    display: block;
+    /*color: #D7D7D6; this was making the nav links gray*/
+    text-decoration: none;
+    padding: 15px 13px;
+    /* the padding defines the height and widthe of the hover state 
+    of the nav list items*/
+}
+
+/*nav a:visited {*/
+/*    color: #EE6B39;*/
+/*}*/
+
+nav a:hover {
+    background: #D7D7D6;
+    color: #7D97A6;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.section-height {
+    height: 275px;
+    margin: 8px 0px;
+}
+
+/* link reset ???? This seams to be keeping the blue from showing up on the links in sections 1 and 2*/
+a:link, a:visited {
+  background-color: transparent;
+  text-transform: none;
+    color: inherit;
+}
+
+.section-1 {
+    background-color: #13120F;
+    background-image: url("../images/road/R_BlueRidgeParkway-5D-41-25p.jpg");
+    background-repeat: no-repeat;
+    background-position: 55% 60%;
+    background-size: cover; /* better than 100% 100% so the image isn't skewed*/
+    color: #FFF;
+    padding-top: 115px;
+    /* max-width: 600px;
+    margin: 0 auto; */
+}
+
+.section-2 {
+    display: flex;
+    background-color: #13120F;
+    font-size: 1.25rem
+}
+
+.sec2-left {
+    /*background-color: #EE6B39;*/
+    height: inherit;
+    background-image:url("../images/road/R_BlueRidgeParkway-g10-010-25p.jpg");
+    background-repeat: no-repeat;
+    background-position: 39% 50%;
+    background-size: cover; /* better than 100% 100% so the image isn't skewed*/
+    width: 33%;
+    padding: 8px 8px 8px 8px;
+    margin: 0px 8px 0px 8px;
+    color: #000000; /* color black since text is against white sky background*/
+}
+
+.sec2-middle {
+    /*background-color: #EE6B39; #13120F instead? */
+    height: inherit;
+    background-image:url("../images/maintenance/img_4210.jpg");
+    background-repeat: no-repeat;
+    background-position: 55% 50%;
+    background-size: cover; /* better than 100% 100% so the image isn't skewed*/
+    width: 33%;
+    padding: 8px 8px 8px 8px;
+    margin: 0px 0px 8px 0px;
+    color: #FFF;
+
+}
+
+.sec2-right {
+    /*background-color: #EE6B39;*/
+    height: inherit;
+    background-image:url("../images/friends/F_blueridgeparkway-5d-04.jpg");
+    background-repeat: no-repeat;
+    background-position: 75% 50%;
+    background-size: cover; /* better than 100% 100% so the image isn't skewed*/
+    width: 33%;
+    padding: 8px 8px 8px 8px;
+    margin: 0px 8px 0px 8px;
+    color: #FFF;
+}
+
+.text-group {
+  width:100%;
+  /*display:flex;*/
+  margin-top:10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #000000;
+}
+
+.image-1 {
+  background-image: <img images/R_BlueRidgeParkway-5D-41-25p.jpg>;
+}
+.road-1 {
+    background-color: #13120F;
+}
+
+.road-2 {
+    background-color: #13120F;
+}
+
+.footer {
+    background-color: #7D97A6;
+    height: 50px;
+/* I want to figure out how to have "About" centered vertically in the footer */
+}
