@@ -1,0 +1,42 @@
+/* based on code by Gregory Schier
+https://codepen.io/gschier/pen/HCoqh Use for images pop up and close without needing to close a new window. */
+
+.lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+
+	/** Position and style */
+	position: fixed;
+	z-index: 999;
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+	top: 0px;
+	left: 0;
+	background: rgba(225,225,225,0.8);
+}
+
+.empty-space {
+    display:inline-block;
+    width:100vw;
+    height:100vh;
+    position: fixed;
+}
+
+.modal img {
+	/** Pad the lightbox image */
+	margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 90px;
+    max-width: 90vw;
+	max-height: 80vh;
+    object-fit: contain;
+}
+
+.lightbox:target {
+	/** Remove default browser outline */
+	outline: none;
+
+	/** Unhide lightbox **/
+	display: block;
+}

@@ -7,6 +7,7 @@
     <title>JPH Moto Road</title>
     <link href="https://fonts.googleapis.com/css?family=Mukta+Malar:400,700" rel="stylesheet">
     <link href="css/stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/road.css" type="text/css"> <!--Second style sheet for Photo lightbox -->
 </head>
 <body>
 
@@ -25,22 +26,48 @@
     </ul>
     </nav>
     
-<!-- How can I get the scroll to not interfere with the Nav bar and footer? ––––––--------------------------------------- -->    
-    <!-- Photo Grid -->
+     <!-- Photo Grid -->
     <div class="row"> 
-      <div class="column">
-        <a href="images/friends/Docs_road marker.jpg" target="_blank"><img src="images/friends/Docs_road marker.jpg" style="width:100%"></a>
-        <a href="images/friends/Thestable.jpg" target="_blank"><img src="images/friends/Thestable.jpg" style="width:100%"></a>
-
-      </div>
-      <div class="column">
-        <a href="images/friends/f_blueridgeparkway-5d-38.jpg" target="_blank"><img src="images/friends/f_blueridgeparkway-5d-38.jpg" style="width:100%"></a>
-        <a href="images/friends/f_blueridgeparkway-5d-10.jpg" target="_blank"><img src="images/friends/f_blueridgeparkway-5d-10.jpg" style="width:100%"></a>
-      </div>  
-      <div class="column">
-        <a href="images/friends/f_blueridgeparkway-5d-04.jpg" target="_blank"><img src="images/friends/f_blueridgeparkway-5d-04.jpg" style="width:100%"></a>
-        <a href="images/friends/maine_2013_126.jpg" target="_blank"><img src="images/friends/maine_2013_126.jpg" style="width:100%"></a>          
+        <div class="column">
+            <a href="#img1f"><img src="images/friends/Docs_road marker.jpg" alt="Photo of friends." style="width:100%"></a>
+            <a href="#img2f"><img src="images/friends/Thestable.jpg" alt="Photo of friends." style="width:100%"></a>
+        </div>
+      
+        <div class="column">
+            <a href="#img3f"><img src="images/friends/f_blueridgeparkway-5d-38.jpg" alt="Photo of friends." style="width:100%"></a>
+            <a href="#img4f"><img src="images/friends/f_blueridgeparkway-5d-10.jpg"alt="Photo of friends." style="width:100%"></a>
+        </div>  
+      
+        <div class="column" id="column3">
+            <a href="#img5f"><img class="left" src="images/friends/f_blueridgeparkway-5d-04.jpg"alt="Photo of friends." style="width:100%"></a>
+            <a href="#img6f"><img class="right" src="images/friends/maine_2013_126.jpg"alt="Photo of friends." style="width:100%"></a>
+        </div>
     </div>
+    
+    <!-- Photo lightbox -->
+    <div id="img1f" class="lightbox">
+        <a href="friends.html" class="modal"><img src="images/friends/Docs_road marker.jpg"alt="Photo of friends." style="width:100%"></a>
+        <a href="friends.html" class="empty-space"></a>
+    </div>
+    <div id="img2f" class="lightbox">
+        <a href="friends.html" class="modal"><img src="images/friends/Thestable.jpg"alt="Photo of friends."style="width:100%"></a>
+        <a href="friends.html" class="empty-space"></a>
+    </div>
+    <div id="img3f" class="lightbox">
+        <a href="friends.html" class="modal"><img src="images/friends/f_blueridgeparkway-5d-38.jpg"alt="Photo of friends."style="width:100%"></a>
+        <a href="friends.html" class="empty-space"></a>
+    </div>
+    <div id="img4f" class="lightbox">
+        <a href="friends.html" class="modal"><img src="images/friends/f_blueridgeparkway-5d-10.jpg"alt="Photo of friends."style="width:100%"></a>
+        <a href="friends.html" class="empty-space"></a>
+    </div>
+    <div id="img5f" class="lightbox">
+        <a href="friends.html" class="modal"><img src="images/friends/f_blueridgeparkway-5d-04.jpg"alt="Photo of friends."style="width:100%"></a>
+        <a href="friends.html" class="empty-space"></a>
+    </div>
+    <div id="img6f" class="lightbox">
+        <a href="friends.html" class="modal"><img src="images/friends/maine_2013_126.jpg"alt="Photo of friends."style="width:100% height=100%"></a>
+        <a href="friends.html" class="empty-space"></a>
     </div>
     
    <footer class="footer"><a href="about.html">About</a></footer>
